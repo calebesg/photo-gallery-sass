@@ -25,9 +25,19 @@ body ul {
   margin: 0 auto;
   padding: 1.7rem 0;
 }
+@media (max-width: 28.125rem) {
+  .header {
+    padding: 1.1rem;
+  }
+}
 .header-logo {
   font-size: 3rem;
   color: #FFFFFF;
+}
+@media (max-width: 28.125rem) {
+  .header-logo {
+    font-size: 2rem;
+  }
 }
 .header-navbar ul {
   height: 100%;
@@ -35,6 +45,11 @@ body ul {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+@media (max-width: 28.125rem) {
+  .header-navbar {
+    display: none;
+  }
 }
 .header-navbar li {
   text-transform: uppercase;
@@ -68,14 +83,25 @@ body ul {
   justify-content: space-between;
   padding: 0;
 }
+@media (max-width: 28.125rem) {
+  .gallery {
+    flex-direction: column;
+  }
+}
 .gallery-card {
   width: 31%;
   height: 25rem;
+  border-radius: 0.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0;
   flex-direction: column;
+}
+@media (max-width: 28.125rem) {
+  .gallery-card {
+    width: 90%;
+  }
 }
 .gallery-card-title {
   font-size: 2rem;
@@ -86,6 +112,7 @@ body ul {
 .gallery-card-btn {
   padding: 0.6rem 2rem;
   border: 2px solid #FFFFFF;
+  border-radius: 0.25rem;
   color: #FFFFFF;
   font-weight: 400;
   letter-spacing: 1px;
@@ -99,99 +126,108 @@ body ul {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/animais.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-1:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/arquitetura.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-2:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/cidade.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-3:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/decoracao.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-4:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/esportes.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-5:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-6 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/natureza.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-6:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-7 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/paisagem.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-7:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-8 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pessoas.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-8:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 .gallery #card-9 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/refeicoes.jpg");
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(80%);
   transition: all 0.6s;
 }
 .gallery #card-9:hover {
-  background-size: 110%;
+  background-size: 120%;
   filter: grayscale(0);
 }
 

@@ -7,14 +7,23 @@
   justify-content: space-between
   @include mixins.container
 
+  @include mixins.mobile
+    padding: 1.1rem
+
   &-logo
     font-size: 3rem
     color: variables.$primary-color
+
+    @include mixins.mobile
+      font-size: 2rem
 
   &-navbar
     ul
       height: 100%
       @include mixins.flex-center(variables.$small-space)
+
+    @include mixins.mobile
+      display: none
 
     li
       text-transform: uppercase
@@ -42,11 +51,18 @@
   justify-content: space-between
   padding: 0
 
+  @include mixins.mobile
+    flex-direction: column
+
   &-card
     width: 31%
     height: 25rem
+    border-radius: 0.25rem
     @include mixins.flex-center(0)
     flex-direction: column
+
+    @include mixins.mobile
+      width: 90%
 
     &-title
       font-size: 2rem
@@ -57,6 +73,7 @@
     &-btn
       padding: 0.6rem 2rem
       border: 2px solid variables.$primary-color
+      border-radius: 0.25rem
       color: variables.$primary-color
       font-weight: 400
       letter-spacing: 1px
