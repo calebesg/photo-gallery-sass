@@ -12,15 +12,14 @@
   gap: $gap
 
 @mixin bg-image($image)
-  background-image: url('../img/#{$image}')
+  background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, 0.3)), url('../img/#{$image}')
   background-size: 100%
   background-position: center
   filter: grayscale(80%)
-  transition: .6s
+  transition: all .6s
 
   &:hover
     background-size: 110%
     filter: grayscale(0)
-    background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, 0.3)), url('../img/#{$image}')
   
   
